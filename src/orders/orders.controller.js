@@ -46,7 +46,7 @@ function bodyValidation(req, res, next) {
   return next();
 }
 
-const dishValidation = (req, res, next) => {
+function dishValidation(req, res, next) {
   const dishes = res.locals.body.dishes;
   let message = "";
   dishes.forEach((dish, index) => {
